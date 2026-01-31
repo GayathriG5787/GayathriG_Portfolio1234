@@ -369,125 +369,65 @@
 
         <!--Work-->
         <section class="work section" id="work">
-            <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
-
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">Web</span>
-                <span class="work__item"data-filter=".app">App</span>
-                <span class="work__item"data-filter=".design">Design</span>
-            </div>
+            <h2 data-heading="Featured Project" class="section__title">My Work</h2>
 
             <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="assets/img/work-1.png" alt="" class="work__img">
-                    <h3 class="work__title">Web Development</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">E-commerce website</h3>
-                        <p class="details__description">"Created a streamlined e-commerce site with a focus on user-friendly design and efficient product browsing."</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2024</span></li>
-                            <li>Technologies - <span>React Node.JS Stripe</span></li>
-                            <li>Role - <span>Fullstack</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
+
+                <!-- Featured Project Card -->
+                <div class="work__card featured-project">
+
+                    <!-- Project Image -->
+                    <img src="assets/img/bharat-digital.png" 
+                        alt="Bharat Digital UK website screenshot" 
+                        class="work__img">
+
+                    <!-- Project Content -->
+                    <div class="featured__content">
+
+                        <h3 class="work__title">
+                            Bharat Digital – UK Startup Website
+                        </h3>
+
+                        <p class="featured__subtitle">
+                            Full Stack Developer · Production Project
+                        </p>
+
+                        <p class="work__description">
+                            Designed, developed, and deployed the official website for a UK-based digital services startup, with end-to-end ownership of frontend development and backend integration.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="featured__tech">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Strapi</span>
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>Cloudinary</span>
+                            <span>Brevo</span>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="featured__buttons">
+                            <a href="https://bharatdigital.co.uk" 
+                            target="_blank" 
+                            class="button">
+                                Live Website
+                            </a>
+
+                            <a href="#contact" 
+                            class="button button--secondary">
+                                Contact Me
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="work__card mix web">
-                    <img src="assets/img/work-2.png" alt="" class="work__img">
-                    <h3 class="work__title">Web Development</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Recipe Sharing Website</h3>
-                        <p class="details__description">A platform for discovering, sharing, and saving delicious recipes from a vibrant community of food enthusiasts.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2024</span></li>
-                            <li>Technologies - <span>React Node.JS MongoDB</span></li>
-                            <li>Role - <span>Fullstack</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix app">
-                    <img src="assets/img/work-3.png" alt="" class="work__img">
-                    <h3 class="work__title">App Development</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">To Do List Application</h3>
-                        <p class="details__description">An intuitive app for organizing tasks, setting reminders, and managing daily activities efficiently.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2024</span></li>
-                            <li>Technologies - <span>Vue.JS Firebase Express.JS</span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix app">
-                    <img src="assets/img/work-4.png" alt="" class="work__img">
-                    <h3 class="work__title">App Development</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Blog Application</h3>
-                        <p class="details__description">A user-friendly platform for creating, publishing, and engaging with personal and professional blog content.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2024</span></li>
-                            <li>Technologies - <span>Wordpress PHP MySQL</span></li>
-                            <li>Role - <span>frontend backend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/work-5.png" alt="" class="work__img">
-                    <h3 class="work__title">Web Design</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Website Design</h3>
-                        <p class="details__description">A beautifully crafted website that delivers a seamless user experience and effectively communicates brand message.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2024</span></li>
-                            <li>Technologies - <span>AdobeXD Figma HTML CSS</span></li>
-                            <li>Role - <span>UI/UX</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/work-6.png" alt="" class="work__img">
-                    <h3 class="work__title">Logo Design</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">Logo Design</h3>
-                        <p class="details__description">A distinctive and memorable logo that visually represents and enhances brand identity.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>Aug 2025</span></li>
-                            <li>Technologies - <span>Adobe Illustrator</span></li>
-                            <li>Role - <span>Graphics</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </section>
+
 
         <!--Portfolio Popup-->
         <div class="portfolio__popup">
