@@ -612,8 +612,8 @@ input{
 }
 /*Work Section*/
 .work__container{
-    grid-template-columns: repeat(3,330px);
-    gap: 1.8rem;
+    /* grid-template-columns: repeat(3,330px);
+    gap: 1.8rem; */
     justify-content: center;
     padding-top: 1rem;
 }
@@ -767,9 +767,10 @@ input{
 /* ===== Featured Project ===== */
 
 .featured-project {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: stretch;
 }
 
 .featured__subtitle {
@@ -1252,10 +1253,10 @@ textarea.input {
         padding-right: 0;
     }
 
-    .work__container {
+    /* .work__container {
         grid-template-columns: repeat(2,330px);
         gap: 2.5rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {
