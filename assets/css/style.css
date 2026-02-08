@@ -610,6 +610,7 @@ input{
     display: block;
     background-color: var(--skin-color);
 }
+
 /*Work Section*/
 .work__container{
     /* grid-template-columns: repeat(3,330px);
@@ -646,7 +647,7 @@ input{
 
 .work__img{
     border-radius: .5rem;
-    margin-bottom: var(--mb-1);
+    /* margin-bottom: var(--mb-1); */
 }
 
 .work__title{
@@ -803,6 +804,13 @@ input{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.featured__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Responsive */
@@ -1358,9 +1366,9 @@ textarea.input {
         padding: 1rem;
     }
 
-    .work__img {
+    /* .work__img {
         margin-bottom: var(--mb-0-75);
-    }
+    } */
 
     .work__title {
         margin-bottom: var(--mb-0-25);
