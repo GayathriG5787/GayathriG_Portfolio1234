@@ -575,6 +575,7 @@ input{
     font-size: var(--small-font-size);
     color: var(--skin-color);
 }
+
 /*Skills Section*/
 .skills__container{
     grid-template-columns: 360px 320px;
