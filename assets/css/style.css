@@ -521,6 +521,12 @@ input{
     margin-bottom: var(--mb-2);
 }
 
+.qualification__title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .timeline__item{
     position: relative;
     padding-left: 3rem;
