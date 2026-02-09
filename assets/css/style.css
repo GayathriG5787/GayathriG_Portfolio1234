@@ -413,52 +413,99 @@ input{
     flex-wrap: wrap;
 }
 
+/* ===== ABOUT SECTION UPDATED ===== */
 
-/*About Section*/
 .about__container{
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 4rem;
+    grid-template-columns: 0.9fr 1.1fr;
+    column-gap: 3rem;
     align-items: center;
 }
 
 .about__img{
-    width: 480px;
-    border-radius: 0.75rem;
+    width: 420px;
+    border-radius: .75rem;
     justify-self: center;
 }
 
+/* Heading stronger hierarchy */
 .about__heading{
-    font-size: var(--h3-font-size);
+    font-size: 1.4rem;
     margin-bottom: var(--mb-0-75);
+    line-height: 1.4;
 }
 
+/* Description improved readability */
 .about__description{
-    text-align: justify;
-    padding-right: 6rem;
+    line-height: 1.7;
     margin-bottom: var(--mb-2);
+    max-width: 580px;
 }
 
+/* Info cards */
 .about__info{
-    grid-template-columns: repeat(3,140px);
-    column-gap: .5rem;
-    margin-bottom: --mb-3;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: var(--mb-2);
 }
 
 .about__box{
     text-align: center;
-    border-radius: .25rem;
-    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    padding: 1.25rem 1rem;
     background-color: var(--box-color);
+    transition: .3s;
+}
+
+.about__box:hover{
+    transform: translateY(-4px);
 }
 
 .about__icon{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--skin-color);
-    margin-bottom: var(--mb-0-75);
+    margin-bottom: var(--mb-0-5);
+}
+
+.about__title{
+    font-size: var(--normal-font-size);
+    margin-bottom: .25rem;
 }
 
 .about__subtitle{
     font-size: var(--smaller-font-size);
+    line-height: 1.4;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px){
+    .about__container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 2.5rem;
+    }
+
+    .about__img{
+        width: 320px;
+    }
+
+    .about__description{
+        margin: auto;
+    }
+
+    .about__info{
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px){
+    .about__img{
+        width: 240px;
+    }
+
+    .about__info{
+        grid-template-columns: 1fr;
+    }
 }
 
 /*Qualification Section*/
