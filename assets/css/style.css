@@ -710,6 +710,16 @@ input{
     box-shadow: 0 0 6px var(--skin-color);
 }
 
+.skills__list a{
+    color: var(--skin-color);
+    font-weight: var(--font-medium);
+    transition: .25s ease;
+}
+
+.skills__list a:hover{
+    color: hsl(342,92%,60%);
+}
+
 /*Work Section*/
 .work__container{
     /* grid-template-columns: repeat(3,330px);
