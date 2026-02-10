@@ -1191,6 +1191,11 @@ input{
     margin-bottom: 1.9rem;
 }
 
+.input__container label {
+    background: var(--body-color);
+    padding: 0 6px;
+}
+
 .input {
     width: 100%;
     border: 2px solid var(--text-color);
