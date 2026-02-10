@@ -583,22 +583,26 @@ input{
 }
 
 /*Skills Section*/
+/* ================= SKILLS SECTION ================= */
+
 .skills__container{
-    grid-template-columns: 360px 320px;
-    column-gap: 3rem;
-    justify-content: center;
+    max-width: 650px;
+    margin: auto;
 }
 
+/* Accordion Header */
 .skills__header{
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding: .8rem 0;
 }
 
 .skills__header:not(:last-child){
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1-5);
 }
 
+/* Icons */
 .skills__icon,
 .skills__arrow{
     font-size: 2rem;
@@ -609,24 +613,23 @@ input{
     margin-right: var(--mb-0-75);
 }
 
+/* Title */
 .skills__title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
-.skills__subtitle{
-    font-size: var(--small-font-size);
-}
-
+/* Arrow animation */
 .skills__arrow{
     margin-left: auto;
+    transition: .3s;
 }
 
 .skills__active .skills__arrow{
     transform: rotate(-90deg);
-    transition: .3s;
 }
 
+/* Accordion Content */
 .skills [data-content]{
     display: none;
 }
@@ -635,34 +638,29 @@ input{
     display: block;
 }
 
-.skills__list {
-    row-gap: 1.8rem;
+/* Skills List */
+.skills__list{
+    list-style: none;
+    padding-left: 2.5rem;
+    margin-bottom: var(--mb-2);
+    line-height: 1.9;
 }
 
-.skills__titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
-}
-
-.skills__name{
+/* Individual skill items */
+.skills__list li{
+    margin-bottom: .5rem;
+    color: var(--text-color);
     font-size: var(--normal-font-size);
+}
+
+/* Strong labels (Frontend, Backend etc) */
+.skills__list strong{
+    color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
-.skills__bar,
-.skills__percentage{
-    height: 5px;
-    border-radius: .25rem;
-}
-
-.skills__bar{
-    background-color: var(--box-color);
-}
-
-.skills__percentage{
-    display: block;
-    background-color: var(--skin-color);
+.skills__header:hover {
+    color: var(--skin-color);
 }
 
 /*Work Section*/
