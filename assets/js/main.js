@@ -199,7 +199,7 @@ if(contactForm){
 
             setTimeout(() => {
                 msgBox.classList.remove("show");
-            }, 5000);
+            }, 4000);
 
             contactForm.reset();
 
@@ -217,7 +217,7 @@ if(contactForm){
 
             setTimeout(() => {
                 msgBox.classList.remove("show");
-            }, 5000);
+            }, 4000);
 
             console.log(error);
         });

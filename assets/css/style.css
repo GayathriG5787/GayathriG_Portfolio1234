@@ -1287,6 +1287,8 @@ textarea.input {
     align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 /* SUCCESS */
@@ -1308,7 +1310,7 @@ textarea.input {
 
 /* Visible animation */
 .form__message.show {
-    display: block;
+    display: flex;
     opacity: 1;
     transform: translateY(0);
 }
