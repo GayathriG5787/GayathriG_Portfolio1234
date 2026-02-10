@@ -595,7 +595,10 @@ input{
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: .8rem 0;
+    padding: .8rem;
+    border-radius: .5rem;
+    width: 100%;
+    background-color: var(--box-color);
 }
 
 .skills__header:not(:last-child){
@@ -651,16 +654,6 @@ input{
     margin-bottom: .5rem;
     color: var(--text-color);
     font-size: var(--normal-font-size);
-}
-
-/* Strong labels (Frontend, Backend etc) */
-.skills__list strong{
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-}
-
-.skills__header:hover {
-    color: var(--skin-color);
 }
 
 /*Work Section*/
