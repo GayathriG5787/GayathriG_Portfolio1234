@@ -599,6 +599,7 @@ input{
     border-radius: .5rem;
     width: 100%;
     background-color: var(--box-color);
+    transition: all .25s ease;
 }
 
 .skills__header:not(:last-child){
@@ -650,6 +651,28 @@ input{
     max-height: 500px; /* enough for your content */
     opacity: 1;
     transform: translateY(0);
+}
+
+.skills__header{
+    transition: all .25s ease;
+}
+
+/* Balanced hover */
+.skills__header:hover{
+    background-color: hsl(var(--hue-color),14%,14%);
+    transform: translateY(-2px);
+}
+
+.skills__header:hover .skills__icon{
+    transform: scale(1.08);
+}
+
+.skills__icon{
+    transition: .25s ease;
+}
+
+.skills__header:hover .skills__arrow{
+    transform: translateX(4px);
 }
 
 /* Skills List */
