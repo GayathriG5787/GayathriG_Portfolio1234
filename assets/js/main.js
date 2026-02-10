@@ -174,4 +174,38 @@ function navHighlighter()
     })
 }
 
+/*==================== CONTACT FORM EMAILJS ====================*/
+
+(function(){
+    emailjs.init("9rLXXTVfmNSE6oqrp"); // Replace with EmailJS public key
+})();
+
+const contactForm = document.getElementById("contact-form");
+
+if(contactForm){
+    contactForm.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_dptqygp",     // Replace with your service ID
+            "template_9613x7p",    // Replace with your template ID
+            this
+        )
+        .then(() => {
+            alert("Message sent successfully!");
+            contactForm.reset();
+
+            // Optional: remove focus animation after reset
+            document.querySelectorAll(".input__container").forEach(c => {
+                c.classList.remove("focus");
+            });
+
+        })
+        .catch(error => {
+            alert("Failed to send message. Please try again.");
+            console.log(error);
+        });
+    });
+}
+
 /*SHOW SCROLL UP*/
