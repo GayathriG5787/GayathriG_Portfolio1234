@@ -18,29 +18,28 @@ if(navClose) {
     })
 }
 
+/*SKILLS ACCORDION (Only one open at a time)*/
+const skillHeaders = document.querySelectorAll('.skills__header');
+const skillContents = document.querySelectorAll('.skills__group');
 
-/*SKILLS TABS*/
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContent = document.querySelectorAll('[data-content]')
+skillHeaders.forEach(header => {
+    header.addEventListener('click', () => {
 
-    tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-            const target = document.querySelector(tab.dataset.target)
+        const target = document.querySelector(header.dataset.target);
+        const isOpen = header.classList.contains('skills__active');
 
-            tabContent.forEach(tabContents => {
-                tabContents.classList.remove("skills__active")
-            })
+        // Close all accordions first
+        skillHeaders.forEach(h => h.classList.remove('skills__active'));
+        skillContents.forEach(c => c.classList.remove('skills__active'));
 
-            target.classList.add('skills__active')
+        // If clicked one wasn't open → open it
+        if (!isOpen) {
+            header.classList.add('skills__active');
+            target.classList.add('skills__active');
+        }
 
-
-            tabs.forEach(tab => {
-                tab.classList.remove("skills__active")
-            })
-
-            tab.classList.add('skills__active')
-        })
-    })
+    });
+});
 
 /*MIXITUP FILTER PORTFOLIO*/
 let mixerPortfolio = mixitup('.work__container', {

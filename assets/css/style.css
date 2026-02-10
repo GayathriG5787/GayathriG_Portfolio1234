@@ -633,12 +633,23 @@ input{
 }
 
 /* Accordion Content */
-.skills [data-content]{
-    display: none;
+/* Accordion Content Animation */
+.skills__group{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition:
+        max-height .45s ease,
+        opacity .3s ease,
+        transform .3s ease;
 }
 
+/* When active */
 .skills__active[data-content]{
-    display: block;
+    max-height: 500px; /* enough for your content */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Skills List */
