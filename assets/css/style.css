@@ -582,49 +582,87 @@ input{
     color: var(--skin-color);
 }
 
-/*==================== SKILLS SECTION (CARD GRID) ====================*/
-
+/*Skills Section*/
 .skills__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: auto;
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
 }
 
-/* Skill Card */
-.skills__card{
-    background-color: var(--box-color);
-    padding: 2rem;
-    border-radius: .75rem;
-    transition: .3s;
-    border: 1px solid transparent;
+.skills__header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* Hover effect */
-.skills__card:hover{
-    transform: translateY(-6px);
-    border-color: var(--skin-color);
+.skills__header:not(:last-child){
+    margin-bottom: var(--mb-2-5);
 }
 
-/* Card title */
-.skills__card-title{
-    font-size: var(--h3-font-size);
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
     color: var(--skin-color);
-    margin-bottom: .6rem;
 }
 
-/* Card text */
-.skills__card-text{
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__subtitle{
     font-size: var(--small-font-size);
-    line-height: 1.6;
 }
 
-/* Responsive tweaks */
-@media screen and (max-width:768px){
-    .skills__card{
-        padding: 1.5rem;
-    }
+.skills__arrow{
+    margin-left: auto;
+}
+
+.skills__active .skills__arrow{
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+.skills [data-content]{
+    display: none;
+}
+
+.skills__active[data-content]{
+    display: block;
+}
+
+.skills__list {
+    row-gap: 1.8rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: var(--box-color);
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--skin-color);
 }
 
 /*Work Section*/
@@ -1621,4 +1659,3 @@ textarea.input {
         padding-right: 3.5rem;
     }
 }
-
