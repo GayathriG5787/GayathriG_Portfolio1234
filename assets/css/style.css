@@ -667,6 +667,26 @@ input{
     font-size: var(--normal-font-size);
 }
 
+/* Premium bullet styling */
+.skills__list li{
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+/* Custom bullet dot */
+.skills__list li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-top: .25rem;
+    background: var(--skin-color);
+    box-shadow: 0 0 6px var(--skin-color);
+}
+
 /*Work Section*/
 .work__container{
     /* grid-template-columns: repeat(3,330px);
