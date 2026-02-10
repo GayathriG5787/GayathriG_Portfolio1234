@@ -194,12 +194,11 @@ if(contactForm){
         .then(() => {
             const msgBox = document.getElementById("form-message");
 
-            msgBox.style.display = "block";
-            msgBox.className = "form__message success";
-            msgBox.textContent = "✅ Message sent successfully! I'll get back to you soon.";
+            msgBox.className = "form__message success show";
+            msgBox.textContent = "Message sent successfully! I'll get back to you soon.";
 
             setTimeout(() => {
-                msgBox.style.display = "none";
+                msgBox.classList.remove("show");
             }, 5000);
 
             contactForm.reset();
@@ -213,13 +212,13 @@ if(contactForm){
         .catch(error => {
             const msgBox = document.getElementById("form-message");
 
-            msgBox.style.display = "block";
-            msgBox.className = "form__message error";
-            msgBox.textContent = "❌ Failed to send message. Please try again.";
+            msgBox.className = "form__message error show";
+            msgBox.textContent = "Failed to send message. Please try again.";
 
             setTimeout(() => {
-                msgBox.style.display = "none";
+                msgBox.classList.remove("show");
             }, 5000);
+
             console.log(error);
         });
     });
