@@ -192,7 +192,16 @@ if(contactForm){
             this
         )
         .then(() => {
-            alert("Message sent successfully!");
+            const msgBox = document.getElementById("form-message");
+
+            msgBox.style.display = "block";
+            msgBox.className = "form__message success";
+            msgBox.textContent = "✅ Message sent successfully! I'll get back to you soon.";
+
+            setTimeout(() => {
+                msgBox.style.display = "none";
+            }, 5000);
+
             contactForm.reset();
 
             // Optional: remove focus animation after reset
@@ -202,7 +211,15 @@ if(contactForm){
 
         })
         .catch(error => {
-            alert("Failed to send message. Please try again.");
+            const msgBox = document.getElementById("form-message");
+
+            msgBox.style.display = "block";
+            msgBox.className = "form__message error";
+            msgBox.textContent = "❌ Failed to send message. Please try again.";
+
+            setTimeout(() => {
+                msgBox.style.display = "none";
+            }, 5000);
             console.log(error);
         });
     });

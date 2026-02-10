@@ -1277,6 +1277,27 @@ textarea.input {
     opacity: 1;
 }
 
+.form__message {
+    margin-top: 1rem;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: none;
+}
+
+.form__message.success {
+    background: rgba(0, 255, 150, 0.1);
+    border: 1px solid #00ff95;
+    color: #00ff95;
+}
+
+.form__message.error {
+    background: rgba(255, 0, 70, 0.1);
+    border: 1px solid #ff0046;
+    color: #ff0046;
+}
+
+
 /*FOOTER*/
 .footer {
     padding-top: 2rem;
