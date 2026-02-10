@@ -582,73 +582,48 @@ input{
     color: var(--skin-color);
 }
 
-/*==================== SKILLS SECTION UPDATED ====================*/
+/*==================== SKILLS SECTION (CARD GRID) ====================*/
 
 .skills__container{
-    max-width: 900px;
-    margin: auto;
     display: grid;
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Skill Category Block */
-.skills__block{
+/* Skill Card */
+.skills__card{
     background-color: var(--box-color);
-    padding: 1.8rem 2rem;
+    padding: 2rem;
     border-radius: .75rem;
     transition: .3s;
+    border: 1px solid transparent;
 }
 
-/* Hover subtle lift */
-.skills__block:hover{
-    transform: translateY(-4px);
+/* Hover effect */
+.skills__card:hover{
+    transform: translateY(-6px);
+    border-color: var(--skin-color);
 }
 
-/* Category Heading */
-.skills__category{
+/* Card title */
+.skills__card-title{
     font-size: var(--h3-font-size);
-    margin-bottom: 1rem;
     color: var(--skin-color);
+    margin-bottom: .6rem;
 }
 
-/* Skill Tags Wrapper */
-.skills__tags{
-    display: flex;
-    flex-wrap: wrap;
-    gap: .6rem;
-}
-
-/* Individual Skill Tag */
-.skills__tags span{
-    padding: .45rem .9rem;
-    background-color: hsl(var(--hue-color),14%,14%);
-    border-radius: 999px;
+/* Card text */
+.skills__card-text{
     font-size: var(--small-font-size);
-    transition: .25s;
-    cursor: default;
+    line-height: 1.6;
 }
 
-/* Hover Effect */
-.skills__tags span:hover{
-    background-color: var(--skin-color);
-    color: #fff;
-}
-
-/*==================== RESPONSIVE ====================*/
-
-@media screen and (max-width: 768px){
-    .skills__container{
-        gap: 2rem;
-    }
-
-    .skills__block{
+/* Responsive tweaks */
+@media screen and (max-width:768px){
+    .skills__card{
         padding: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .skills__tags{
-        justify-content: center;
     }
 }
 
