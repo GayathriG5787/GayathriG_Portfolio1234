@@ -195,7 +195,7 @@ if(contactForm){
             const msgBox = document.getElementById("form-message");
 
             msgBox.className = "form__message success show";
-            msgBox.textContent = "Message sent successfully! I'll get back to you soon.";
+            msgBox.innerHTML = "✔ Message sent successfully! I'll get back to you soon.";
 
             setTimeout(() => {
                 msgBox.classList.remove("show");
@@ -213,7 +213,7 @@ if(contactForm){
             const msgBox = document.getElementById("form-message");
 
             msgBox.className = "form__message error show";
-            msgBox.textContent = "Failed to send message. Please try again.";
+            msgBox.innerHTML = "✖ Failed to send message. Please try again.";
 
             setTimeout(() => {
                 msgBox.classList.remove("show");
