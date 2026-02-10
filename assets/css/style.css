@@ -1283,36 +1283,38 @@ textarea.input {
     border-radius: 6px;
     font-size: 14px;
     font-family: inherit;
-    display: none;
+
+    display: none; /* Completely remove from layout initially */
     align-items: center;
     gap: 8px;
-    transition: all 0.3s ease;
+
     opacity: 0;
     transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* SUCCESS */
 .form__message.success {
-    display: flex;
-    /* background: var(--box-color); */
-    /* background: rgba(255, 0, 79, 0.08); */
     border: 1.5px solid rgba(255, 0, 79, 0.4);
     color: #ff004f;
 }
 
 /* ERROR */
 .form__message.error {
-    display: flex;
-    /* background: rgba(255, 70, 70, 0.08); */
     border: 1.5px solid rgba(255, 70, 70, 0.4);
     color: #ff4d4d;
 }
 
-/* Visible animation */
+/* Show notification */
 .form__message.show {
     display: flex;
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Completely hide after animation */
+.form__message.hidden {
+    display: none !important;
 }
 
 /*FOOTER*/
