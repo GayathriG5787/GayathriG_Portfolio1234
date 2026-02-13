@@ -585,6 +585,12 @@ input{
 /*Skills Section*/
 /* ================= SKILLS SECTION ================= */
 
+.skills.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .skills__container{
     max-width: 650px;
     margin: auto;
