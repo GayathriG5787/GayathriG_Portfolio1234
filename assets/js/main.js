@@ -10,6 +10,15 @@ if(navToggle) {
     })
 }
 
+/* AUTO CLOSE SIDEBAR WHEN NAV LINK CLICKED */
+const navLinks = document.querySelectorAll('.nav__link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show-sidebar');
+    });
+});
+
 /*SIDEBAR HIDDEN*/
 /*Validate If Constant Exists*/
 if(navClose) {
