@@ -139,15 +139,74 @@ input{
 }
 
 /* ===== TOP NAVBAR ===== */
+/* ===== TOP NAVBAR ===== */
+
+/* Default → DESKTOP OFF */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: var(--body-color);
-    border-bottom: 1px solid var(--box-color);
-    z-index: 1000;
+    display: none;
+}
+
+/* ===== TABLET ONLY SOCIAL SHIFT ===== */
+@media screen and (max-width:1024px) and (min-width:577px){
+
+    .header__social{
+        display:flex;
+        align-items:center;
+        column-gap:3.5rem;
+    }
+
+    .header__social-follow{
+        font-weight:var(--font-medium);
+        position:relative;
+    }
+
+    .header__social-follow::after{
+        content:'';
+        position:absolute;
+        width:1rem;
+        height:2px;
+        background-color:var(--text-color);
+        right:-45%;
+        top:50%;
+    }
+
+    .header__social-links{
+        display:inline-flex;
+        column-gap:1rem;
+    }
+
+    .header__social-link{
+        font-size:1.08rem;
+        color:var(--text-color);
+        transition:.3s;
+    }
+
+    .header__social-link:hover{
+        transform:translateY(.25rem);
+    }
+}
+
+/* Hide hero Follow Me links ONLY on tablet */
+@media screen and (min-width:577px) and (max-width:1024px){
+    .home__social{
+        display:none !important;
+    }
+}
+
+/* TABLET + MOBILE ONLY */
+@media screen and (max-width:1024px) {
+
+    .header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: var(--body-color);
+        border-bottom: 1px solid var(--box-color);
+        z-index: 1000;
+    }
 }
 
 .nav__bar {
@@ -246,7 +305,7 @@ input{
     font-size: 1.6rem;
     cursor: pointer;
     color: var(--title-color);
-    background: transparent;
+    background: none;
     border: none;
     display: flex;
     align-items: center;
@@ -281,9 +340,16 @@ input{
     margin: auto;
 }
 /*MAIN*/
-.main{
+.main {
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 0;
+}
+
+@media screen and (max-width:1024px){
+    .main {
+        margin-left: 0;
+        margin-top: 60px;
+    }
 }
 
 /*Home Section*/
@@ -1684,6 +1750,10 @@ textarea.input {
     .nav__toggle {
         right: initial;
         left: 1.5rem;
+    }
+
+    .header__social {
+    display: none;
     }
 
     .home {
