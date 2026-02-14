@@ -477,6 +477,16 @@ input{
     line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__info .about__box:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 /* Tablet */
 @media screen and (max-width: 1024px){
     .about__container{
