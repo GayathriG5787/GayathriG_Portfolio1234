@@ -6,7 +6,8 @@ const navMenu = document.getElementById('sidebar'),
 /*Validate If Constant Exists*/
 if(navToggle) {
     navToggle.addEventListener("click", () => {
-        navMenu.classList.add('show-sidebar')
+        navMenu.classList.add('show-sidebar');
+        document.body.classList.add('sidebar-open');
     })
 }
 
@@ -16,6 +17,7 @@ const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('show-sidebar');
+        document.body.classList.remove('sidebar-open');
     });
 });
 
@@ -23,7 +25,8 @@ navLinks.forEach(link => {
 /*Validate If Constant Exists*/
 if(navClose) {
     navClose.addEventListener("click", () => {
-        navMenu.classList.remove('show-sidebar')
+        navMenu.classList.remove('show-sidebar');
+        document.body.classList.remove('sidebar-open');
     })
 }
 

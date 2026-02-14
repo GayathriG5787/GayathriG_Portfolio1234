@@ -1887,3 +1887,11 @@ textarea.input {
         padding-right: 3.5rem;
     }
 }
+
+/* Hide top navbar when sidebar open (mobile + tablet only) */
+@media screen and (max-width:1024px){
+    body.sidebar-open .header{
+        display: none;
+    }
+}
+
