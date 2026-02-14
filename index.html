@@ -1,776 +1,780 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--UNICONS-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--UNICONS-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!--BOXICONS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--BOXICONS-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--SWIPER CSS-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--SWIPER CSS-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--MAIN CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
+        <!--MAIN CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Gayathri Portfolio</title>
-</head>
-<body>
-    <!--SIDEBAR-->
-    <div class="nav__toggle" id="nav-toggle">
-        <i class="uil uil-bars"></i>
-    </div>
-    <aside class="sidebar" id="sidebar">
-        <nav class="nav">
-            <div class="nav__logo">
-                <a href="index.html" class="nav__logo-text">G</a>
-            </div>
-
-            <div class="nav__menu">
-                <div class="menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">Skills</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
+        <title>Gayathri Portfolio</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav__bar container">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
                 </div>
             </div>
-            <div class="btn__share">
-                <i class="uil uil-share-alt social__share"></i>
-            </div>
+        </header>
 
-            <div class="nav__close" id="nav-close">
-                <i class="uil uil-times"></i>
-            </div>
-        </nav>
-    </aside>
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="index.html" class="nav__logo-text">G</a>
+                </div>
 
-    <!--MAIN-->
-    <main class="main">
-        <!--Home-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-
-                <div class="home__social">
-                    <span class="home__social-follow">Follow Me</span>
-                    <div class="home__social-links">
-                        <a href="https://github.com/GayathriG5787" target="_blank" class="home__social-link">
-                            <i class="uil uil-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/gayathri_g_official?igsh=NThuaWZ6aTczOW1o" target="_blank" class="home__social-link">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gayathri-g-146442252" target="_blank" class="home__social-link">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
+                <div class="nav__menu">
+                    <div class="menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link">Skills</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#work" class="nav__link">Work</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#services" class="nav__link">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <img src="assets/img/home-img.png" alt="Gayathri profile image" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title">Hi, I'm Gayathri</h1>
-                    <h3 class="home__subtitle">Full Stack Developer | Next.js & React</h3>
-                    <p class="home__description">
-                        I build and deploy production-ready web applications using Next.js and React,
-                        with backend and headless CMS integration.
-                    </p>
-
-                    <!-- CTA Buttons -->
-                    <div class="home__buttons">
-                        <a href="#work" class="button">
-                            <i class="uil uil-briefcase button__icon"></i>
-                            View My Work
-                        </a>
-
-                        <a href="assets/resume/Gayathri_Resume.pdf" 
-                        class="button button--secondary" download>
-                            <i class="uil uil-download-alt button__icon"></i>
-                            Download Resume
-                        </a>
-                    </div>
+                <div class="btn__share">
+                    <i class="uil uil-share-alt social__share"></i>
                 </div>
 
-                <div class="my__info">
-                    <div class="info__item">
-                        <i class="uil uil-linkedin info__icon"></i>
-                        <div>
-                            <h3 class="info__title">LinkedIn</h3>
-                            <span class="info__subtitle">gayathri-g-146442252</span>
+                <div class="nav__close" id="nav-close">
+                    <i class="uil uil-times"></i>
+                </div>
+            </nav>
+        </aside>
+
+        <!--MAIN-->
+        <main class="main">
+            <!--Home-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Me</span>
+                        <div class="home__social-links">
+                            <a href="https://github.com/GayathriG5787" target="_blank" class="home__social-link">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gayathri_g_official?igsh=NThuaWZ6aTczOW1o" target="_blank" class="home__social-link">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gayathri-g-146442252" target="_blank" class="home__social-link">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="info__item">
-                        <i class="uil uil-whatsapp info__icon"></i>
-                        <div>
-                            <h3 class="info__title">WhatsApp</h3>
-                            <span class="info__subtitle">6369995787</span>
-                        </div>
-                    </div>
+                    <img src="assets/img/home-img.png" alt="Gayathri profile image" class="home__img">
 
-                    <div class="info__item">
-                        <i class="uil uil-envelope-edit info__icon"></i>
-                        <div>
-                            <h3 class="info__title">Email</h3>
-                            <span class="info__subtitle">gayathrigcse2022@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--About-->
-        <section class="about section" id="about">
-            <h2 data-heading="My Intro" class="section__title">About Me</h2>
-
-            <div class="about__container container grid">
-                <img src="assets/img/about-img.png" alt="Gayathri" class="about__img">
-
-                <div class="about__data">
-                    <h3 class="about__heading">
-                        Hi, I'm Gayathri — Full Stack Developer
-                    </h3>
-
-                    <p class="about__description">
-                        Frontend-focused Full Stack Developer with hands-on experience designing, developing, and deploying a production website for a UK-based company. Skilled in Next.js, modern frontend development, headless CMS integration, database connectivity, UI/UX design, SEO optimization, and production deployment & hosting. Passionate about building responsive, performance-driven web applications that deliver real world impact.
-                    </p>
-
-                    <div class="about__info grid">
-
-                        <div class="about__box">
-                            <i class="uil uil-briefcase-alt about__icon"></i>
-                            <h3 class="about__title">Work Experience</h3>
-                            <span class="about__subtitle">
-                                Real client website delivered
-                            </span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class="uil uil-code-branch about__icon"></i>
-                            <h3 class="about__title">Tech Stack</h3>
-                            <span class="about__subtitle">
-                                Next.js • React • CMS • PostgreSQL
-                            </span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class="uil uil-cloud-check about__icon"></i>
-                            <h3 class="about__title">Deployment</h3>
-                            <span class="about__subtitle">
-                                Vercel • Render • SEO optimized
-                            </span>
-                        </div>
-
-                    </div>
-
-                    <a href="#contact" class="button">
-                        <i class="uil uil-navigator button__icon"></i>
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Qualifications -->
-        <section class="qualification section">
-            <h2 data-heading="My Journey" class="section__title">
-                Experience & Education
-            </h2>
-
-            <div class="qualification__container container grid">
-
-                <!-- Experience FIRST (priority) -->
-                <div class="experience highlight-exp">
-                    <h3 class="qualification__title">
-                        <i class="uil uil-suitcase"></i>Experience
-                    </h3>
-
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">
-                                Bharat Digital Limited (UK Startup)
-                            </h3>
-                            <p class="timeline__text">
-                                Full Stack Developer
-                            </p>
-                            <span class="timeline__date">
-                                <i class="uil uil-calendar-alt"></i>
-                                Jun 2025 – Jan 2026
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education -->
-                <div class="education">
-                    <h3 class="qualification__title">
-                        <i class="uil uil-graduation-cap"></i>Education
-                    </h3>
-
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">
-                                BE Computer Science & Engineering
-                            </h3>
-                            <p class="timeline__text">
-                                CKEC, Coimbatore
-                            </p>
-                            <span class="timeline__date">
-                                <i class="uil uil-calendar-alt"></i>
-                                2022 – 2026 • CGPA: 8.44
-                            </span>
-                        </div>
-
-                        <!-- <div class="timeline__item school-entry">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">
-                                Higher Secondary (12th)
-                            </h3>
-                            <p class="timeline__text">
-                                SDA School, Madurai
-                            </p>
-                            <span class="timeline__date">
-                                <i class="uil uil-calendar-alt"></i>
-                                2021 – 2022 • 89.33%
-                            </span>
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!--Skills-->
-        <section class="skills section" id="skills">
-            <h2 data-heading="My Abilities" class="section__title">Core Expertise</h2>
-
-            <div class="skills__container container">
-
-                <!-- FULL STACK -->
-                <div class="skills__header skills__active" data-target="#fullstack">
-                    <i class="uil uil-brackets-curly skills__icon"></i>
-                    <h1 class="skills__title">Full Stack Development</h1>
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                </div>
-
-                <div class="skills__group skills__active" data-content id="fullstack">
-                    <ul class="skills__list">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>React.js, Next.js (Responsive & SEO-friendly frontend development)</li>
-                        <li>Node.js, Express.js, Strapi Headless CMS</li>
-                        <li>PostgreSQL (Supabase) and MongoDB database integration</li>
-                    </ul>
-                </div>
-
-
-                <!-- UI/UX DESIGN -->
-                <div class="skills__header" data-target="#design">
-                    <i class="uil uil-swatchbook skills__icon"></i>
-                    <h1 class="skills__title">UI/UX Design & Branding</h1>
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                </div>
-
-                <div class="skills__group" data-content id="design">
-                    <ul class="skills__list">
-                        <li>Figma UI/UX design and interface prototyping</li>
-                        <li>Wireframing and user-flow planning</li>
-                        <li>Brand identity design (logos, visual consistency, layout design)</li>
-                        <li>Responsive design with usability-focused approach</li>
-                    </ul>
-                </div>
-
-
-                <!-- DEPLOYMENT & TOOLS -->
-                <div class="skills__header" data-target="#tools">
-                    <i class="uil uil-server-network skills__icon"></i>
-                    <h1 class="skills__title">Deployment & Developer Tools</h1>
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                </div>
-
-                <div class="skills__group" data-content id="tools">
-                    <ul class="skills__list">
-                        <li>GitHub version control and collaboration workflow</li>
-                        <li>Deployment on Vercel (frontend) and Render (backend)</li>
-                        <li>Cloudinary media storage integration</li>
-                        <li>Brevo email automation and form workflows</li>
-                        <li>Google Analytics integration and SEO optimization</li>
-                    </ul>
-                </div>
-
-
-                <!-- PROGRAMMING -->
-                <div class="skills__header" data-target="#programming">
-                    <i class="uil uil-code-branch skills__icon"></i>
-                    <h1 class="skills__title">Programming & Problem Solving</h1>
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                </div>
-
-                <div class="skills__group" data-content id="programming">
-                    <ul class="skills__list">
-                        <li>Python problem solving — HackerRank Gold Badge</li>
-                        <li>Ranked 2nd in college on GeeksforGeeks practice portal (Python)</li>
-                        <li>Strong foundation in Data Structures & Algorithms</li>
-                        <li>
-                            Profiles:
-                            <a href="https://www.hackerrank.com/profile/gayathrigcse2022" target="_blank">HackerRank</a> |
-                            <a href="https://www.geeksforgeeks.org/profile/gayathrigbnjg" target="_blank">GeeksforGeeks</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Work-->
-        <section class="work section" id="work">
-            <h2 data-heading="Featured Project" class="section__title">My Work</h2>
-
-            <div class="work__container container grid">
-
-                <!-- Featured Project Card -->
-                <div class="work__card featured-project">
-
-                    <!-- Project Image -->
-                    <img src="assets/img/bharat-digital.png" 
-                        alt="Bharat Digital UK website screenshot" 
-                        class="work__img">
-
-                    <!-- Project Content -->
-                    <div class="featured__content">
-
-                        <h3 class="work__title">
-                            Bharat Digital – UK Startup Website
-                        </h3>
-
-                        <p class="featured__subtitle">
-                            Full Stack Developer · Production Project
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Gayathri</h1>
+                        <h3 class="home__subtitle">Full Stack Developer | Next.js & React</h3>
+                        <p class="home__description">
+                            I build and deploy production-ready web applications using Next.js and React,
+                            with backend and headless CMS integration.
                         </p>
-
-                        <p class="work__description">
-                            Designed and deployed the official website for a UK-based company, covering branding, UI/UX design, Next.js frontend, Strapi CMS backend, Supabase database integration, Cloudinary storage, Brevo email automation, and production deployment.
-                            </p>
-                        <p class="work__description">
-                            Handled end-to-end development from design to deployment, ensuring a responsive and production-ready website.
-                        </p>
-
-                        <!-- Tech Stack -->
-                        <div class="featured__tech">
-                            <span>Next.js</span>
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Strapi</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                            <span>Cloudinary</span>
-                            <span>Brevo</span>
-                        </div>
 
                         <!-- CTA Buttons -->
-                        <div class="featured__buttons">
-                            <a href="https://bharatdigital.co.uk" 
-                            target="_blank" 
-                            class="button">
-                                Live Website
+                        <div class="home__buttons">
+                            <a href="#work" class="button">
+                                <i class="uil uil-briefcase button__icon"></i>
+                                View My Work
                             </a>
 
-                            <a href="#contact" 
-                            class="button button--secondary">
-                                Contact Me
+                            <a href="assets/resume/Gayathri_Resume.pdf" 
+                            class="button button--secondary" download>
+                                <i class="uil uil-download-alt button__icon"></i>
+                                Download Resume
                             </a>
                         </div>
+                    </div>
 
+                    <div class="my__info">
+                        <div class="info__item">
+                            <i class="uil uil-linkedin info__icon"></i>
+                            <div>
+                                <h3 class="info__title">LinkedIn</h3>
+                                <span class="info__subtitle">gayathri-g-146442252</span>
+                            </div>
+                        </div>
+
+                        <div class="info__item">
+                            <i class="uil uil-whatsapp info__icon"></i>
+                            <div>
+                                <h3 class="info__title">WhatsApp</h3>
+                                <span class="info__subtitle">6369995787</span>
+                            </div>
+                        </div>
+
+                        <div class="info__item">
+                            <i class="uil uil-envelope-edit info__icon"></i>
+                            <div>
+                                <h3 class="info__title">Email</h3>
+                                <span class="info__subtitle">gayathrigcse2022@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--About-->
+            <section class="about section" id="about">
+                <h2 data-heading="My Intro" class="section__title">About Me</h2>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about-img.png" alt="Gayathri" class="about__img">
+
+                    <div class="about__data">
+                        <h3 class="about__heading">
+                            Hi, I'm Gayathri — Full Stack Developer
+                        </h3>
+
+                        <p class="about__description">
+                            Frontend-focused Full Stack Developer with hands-on experience designing, developing, and deploying a production website for a UK-based company. Skilled in Next.js, modern frontend development, headless CMS integration, database connectivity, UI/UX design, SEO optimization, and production deployment & hosting. Passionate about building responsive, performance-driven web applications that deliver real world impact.
+                        </p>
+
+                        <div class="about__info grid">
+
+                            <div class="about__box">
+                                <i class="uil uil-briefcase-alt about__icon"></i>
+                                <h3 class="about__title">Work Experience</h3>
+                                <span class="about__subtitle">
+                                    Real client website delivered
+                                </span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class="uil uil-code-branch about__icon"></i>
+                                <h3 class="about__title">Tech Stack</h3>
+                                <span class="about__subtitle">
+                                    Next.js • React • CMS • PostgreSQL
+                                </span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class="uil uil-cloud-check about__icon"></i>
+                                <h3 class="about__title">Deployment</h3>
+                                <span class="about__subtitle">
+                                    Vercel • Render • SEO optimized
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="button">
+                            <i class="uil uil-navigator button__icon"></i>
+                            Contact Me
+                        </a>
                     </div>
                 </div>
-
-            </div>
-        </section>
+            </section>
 
 
-        <!--Portfolio Popup-->
-        <div class="portfolio__popup">
-            <div class="portfolio__popup-inner">
-                <div class="portfolio__popup-content grid">
-                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
-                    <div class="pp__thumbnail">
-                        <img src="assets/img/work-2.png" alt="" class="portfolio__popup-img">
+            <!-- Qualifications -->
+            <section class="qualification section">
+                <h2 data-heading="My Journey" class="section__title">
+                    Experience & Education
+                </h2>
+
+                <div class="qualification__container container grid">
+
+                    <!-- Experience FIRST (priority) -->
+                    <div class="experience highlight-exp">
+                        <h3 class="qualification__title">
+                            <i class="uil uil-suitcase"></i>Experience
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title">
+                                    Bharat Digital Limited (UK Startup)
+                                </h3>
+                                <p class="timeline__text">
+                                    Full Stack Developer
+                                </p>
+                                <span class="timeline__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jun 2025 – Jan 2026
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio__popup-info">
-                        <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
-                        <div class="portfolio__popup-body">
-                            <h3 class="details__title">App for technology & Services</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reiciendis labore saepe.</p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 dec 2020</span></li>
-                            <li>Technologies - <span>html css</span></li>
-                            <li>Role - <span>frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
+
+                    <!-- Education -->
+                    <div class="education">
+                        <h3 class="qualification__title">
+                            <i class="uil uil-graduation-cap"></i>Education
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title">
+                                    BE Computer Science & Engineering
+                                </h3>
+                                <p class="timeline__text">
+                                    CKEC, Coimbatore
+                                </p>
+                                <span class="timeline__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 – 2026 • CGPA: 8.44
+                                </span>
+                            </div>
+
+                            <!-- <div class="timeline__item school-entry">
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title">
+                                    Higher Secondary (12th)
+                                </h3>
+                                <p class="timeline__text">
+                                    SDA School, Madurai
+                                </p>
+                                <span class="timeline__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 – 2022 • 89.33%
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--Skills-->
+            <section class="skills section" id="skills">
+                <h2 data-heading="My Abilities" class="section__title">Core Expertise</h2>
+
+                <div class="skills__container container">
+
+                    <!-- FULL STACK -->
+                    <div class="skills__header skills__active" data-target="#fullstack">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+                        <h1 class="skills__title">Full Stack Development</h1>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__group skills__active" data-content id="fullstack">
+                        <ul class="skills__list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React.js, Next.js (Responsive & SEO-friendly frontend development)</li>
+                            <li>Node.js, Express.js, Strapi Headless CMS</li>
+                            <li>PostgreSQL (Supabase) and MongoDB database integration</li>
                         </ul>
-                        </div>
                     </div>
+
+
+                    <!-- UI/UX DESIGN -->
+                    <div class="skills__header" data-target="#design">
+                        <i class="uil uil-swatchbook skills__icon"></i>
+                        <h1 class="skills__title">UI/UX Design & Branding</h1>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__group" data-content id="design">
+                        <ul class="skills__list">
+                            <li>Figma UI/UX design and interface prototyping</li>
+                            <li>Wireframing and user-flow planning</li>
+                            <li>Brand identity design (logos, visual consistency, layout design)</li>
+                            <li>Responsive design with usability-focused approach</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- DEPLOYMENT & TOOLS -->
+                    <div class="skills__header" data-target="#tools">
+                        <i class="uil uil-server-network skills__icon"></i>
+                        <h1 class="skills__title">Deployment & Developer Tools</h1>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__group" data-content id="tools">
+                        <ul class="skills__list">
+                            <li>GitHub version control and collaboration workflow</li>
+                            <li>Deployment on Vercel (frontend) and Render (backend)</li>
+                            <li>Cloudinary media storage integration</li>
+                            <li>Brevo email automation and form workflows</li>
+                            <li>Google Analytics integration and SEO optimization</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- PROGRAMMING -->
+                    <div class="skills__header" data-target="#programming">
+                        <i class="uil uil-code-branch skills__icon"></i>
+                        <h1 class="skills__title">Programming & Problem Solving</h1>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__group" data-content id="programming">
+                        <ul class="skills__list">
+                            <li>Python problem solving — HackerRank Gold Badge</li>
+                            <li>Ranked 2nd in college on GeeksforGeeks practice portal (Python)</li>
+                            <li>Strong foundation in Data Structures & Algorithms</li>
+                            <li>
+                                Profiles:
+                                <a href="https://www.hackerrank.com/profile/gayathrigcse2022" target="_blank">HackerRank</a> |
+                                <a href="https://www.geeksforgeeks.org/profile/gayathrigbnjg" target="_blank">GeeksforGeeks</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!--Services-->
-        <section class="services section" id="services">
-            <h2 data-heading="Services" class="section__title">What I Offer</h2>
+            <!--Work-->
+            <section class="work section" id="work">
+                <h2 data-heading="Featured Project" class="section__title">My Work</h2>
 
-            <div class="services__container container grid">
+                <div class="work__container container grid">
 
-                <!-- Full Stack Developer -->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Full Stack <br> Developer</h3>
-                    </div>
+                    <!-- Featured Project Card -->
+                    <div class="work__card featured-project">
 
-                    <span class="services__button">
-                        View More <i class="uil uil-arrow-right services__button-icon"></i>
-                    </span>
+                        <!-- Project Image -->
+                        <img src="assets/img/bharat-digital.png" 
+                            alt="Bharat Digital UK website screenshot" 
+                            class="work__img">
 
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="uil uil-times services__modal-close"></i>
+                        <!-- Project Content -->
+                        <div class="featured__content">
 
-                            <h3 class="services__modal-title">Full Stack Developer</h3>
-                            <p class="services__modal-description">
-                                Building production ready web applications with modern frontend technologies, backend integration, CMS development, and realworld deployment experience.
+                            <h3 class="work__title">
+                                Bharat Digital – UK Startup Website
+                            </h3>
+
+                            <p class="featured__subtitle">
+                                Full Stack Developer · Production Project
                             </p>
 
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Develop full-stack apps using React, Next.js, Node.js, and Strapi.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Database integration with PostgreSQL (Supabase) and MongoDB.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">CMS-based content management and API integrations.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Production deployment using Vercel, Render, Cloudinary, and email automation.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Performance optimization, analytics setup, and documentation.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frontend Developer -->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-brackets-curly services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
-                    </div>
-
-                    <span class="services__button">
-                        View More <i class="uil uil-arrow-right services__button-icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <h3 class="services__modal-title">Frontend Developer</h3>
-                            <p class="services__modal-description">
-                                Creating modern, responsive, and user-focused web interfaces with strong
-                                emphasis on performance, accessibility, and user experience.
+                            <p class="work__description">
+                                Designed and deployed the official website for a UK-based company, covering branding, UI/UX design, Next.js frontend, Strapi CMS backend, Supabase database integration, Cloudinary storage, Brevo email automation, and production deployment.
+                                </p>
+                            <p class="work__description">
+                                Handled end-to-end development from design to deployment, ensuring a responsive and production-ready website.
                             </p>
 
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Interactive UI development using React.js and Next.js.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Responsive design using Tailwind CSS, HTML, CSS, and JavaScript.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">SEO-friendly architecture and performance optimization.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">API integration and CMS-driven frontend development.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Clean UI implementation from Figma designs.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UI/UX Designer -->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-edit services__icon"></i>
-                        <h3 class="services__title">UI/UX <br> Designer</h3>
-                    </div>
-
-                    <span class="services__button">
-                        View More <i class="uil uil-arrow-right services__button-icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <h3 class="services__modal-title">UI/UX Designer</h3>
-                            <p class="services__modal-description">
-                                Designing intuitive digital experiences with a strong understanding of both
-                                design principles and frontend implementation.
-                            </p>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">UI/UX design using Figma with wireframes and prototypes.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Branding assets including logo, business card, and letterhead design.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">User-centered design with responsive layouts.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Developer-friendly design handoff for implementation.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Usability improvements through testing and iteration.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!--Testimonials-->
-        <!--<section class="testimonials section">
-            <h2 data-heading="My clients say" class="section__title">Testimonials</h2>
-
-            <div class="testimonials__container container swiper">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__card swiper-slide">
-                        <div class="testimonial__quote">
-                            <i class='bx bxs-quote-alt-left'></i>
-                        </div>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
-                        <h3 class="testimonial__date">March 27. 2020</h3>
-                        <div class="testimonial__profile">
-                            <img src="assets/img/client1.png" alt="" class="testimonial__profile-img">
-
-                            <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">Lee Doe</span>
-                                <span class="testimonial__profile-detail">Director of a company</span>
+                            <!-- Tech Stack -->
+                            <div class="featured__tech">
+                                <span>Next.js</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Strapi</span>
+                                <span>PostgreSQL</span>
+                                <span>Supabase</span>
+                                <span>Cloudinary</span>
+                                <span>Brevo</span>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="testimonial__card swiper-slide">
-                        <div class="testimonial__quote">
-                            <i class='bx bxs-quote-alt-left'></i>
-                        </div>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
-                        <h3 class="testimonial__date">March 27. 2020</h3>
-                        <div class="testimonial__profile">
-                            <img src="assets/img/client2.png" alt="" class="testimonial__profile-img">
+                            <!-- CTA Buttons -->
+                            <div class="featured__buttons">
+                                <a href="https://bharatdigital.co.uk" 
+                                target="_blank" 
+                                class="button">
+                                    Live Website
+                                </a>
 
-                            <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">Lee Doe</span>
-                                <span class="testimonial__profile-detail">Director of a company</span>
+                                <a href="#contact" 
+                                class="button button--secondary">
+                                    Contact Me
+                                </a>
                             </div>
+
                         </div>
                     </div>
 
-                    <div class="testimonial__card swiper-slide">
-                        <div class="testimonial__quote">
-                            <i class='bx bxs-quote-alt-left'></i>
-                        </div>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
-                        <h3 class="testimonial__date">March 27. 2020</h3>
-                        <div class="testimonial__profile">
-                            <img src="assets/img/client3.png" alt="" class="testimonial__profile-img">
+                </div>
+            </section>
 
-                            <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">Lee Doe</span>
-                                <span class="testimonial__profile-detail">Director of a company</span>
+
+            <!--Portfolio Popup-->
+            <div class="portfolio__popup">
+                <div class="portfolio__popup-inner">
+                    <div class="portfolio__popup-content grid">
+                        <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                        <div class="pp__thumbnail">
+                            <img src="assets/img/work-2.png" alt="" class="portfolio__popup-img">
+                        </div>
+                        <div class="portfolio__popup-info">
+                            <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">App for technology & Services</h3>
+                            <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reiciendis labore saepe.</p>
+                            <ul class="details__info">
+                                <li>Created - <span>4 dec 2020</span></li>
+                                <li>Technologies - <span>html css</span></li>
+                                <li>Role - <span>frontend</span></li>
+                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </section>-->
 
-        <!--Contact-->
-        <section class="contact section" id="contact">
-            <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+            <!--Services-->
+            <section class="services section" id="services">
+                <h2 data-heading="Services" class="section__title">What I Offer</h2>
 
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <!-- Email -->
-                        <div class="contact__card">
-                            <i class="uil uil-envelope-edit contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">gayathrigcse2022@gmail.com</span>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gayathrigcse2022@gmail.com"
-                                target="_blank"
+                <div class="services__container container grid">
+
+                    <!-- Full Stack Developer -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Full Stack <br> Developer</h3>
+                        </div>
+
+                        <span class="services__button">
+                            View More <i class="uil uil-arrow-right services__button-icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Full Stack Developer</h3>
+                                <p class="services__modal-description">
+                                    Building production ready web applications with modern frontend technologies, backend integration, CMS development, and realworld deployment experience.
+                                </p>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Develop full-stack apps using React, Next.js, Node.js, and Strapi.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Database integration with PostgreSQL (Supabase) and MongoDB.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">CMS-based content management and API integrations.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Production deployment using Vercel, Render, Cloudinary, and email automation.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Performance optimization, analytics setup, and documentation.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Developer -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-brackets-curly services__icon"></i>
+                            <h3 class="services__title">Frontend <br> Developer</h3>
+                        </div>
+
+                        <span class="services__button">
+                            View More <i class="uil uil-arrow-right services__button-icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <h3 class="services__modal-title">Frontend Developer</h3>
+                                <p class="services__modal-description">
+                                    Creating modern, responsive, and user-focused web interfaces with strong
+                                    emphasis on performance, accessibility, and user experience.
+                                </p>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Interactive UI development using React.js and Next.js.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Responsive design using Tailwind CSS, HTML, CSS, and JavaScript.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">SEO-friendly architecture and performance optimization.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">API integration and CMS-driven frontend development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Clean UI implementation from Figma designs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Designer -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-edit services__icon"></i>
+                            <h3 class="services__title">UI/UX <br> Designer</h3>
+                        </div>
+
+                        <span class="services__button">
+                            View More <i class="uil uil-arrow-right services__button-icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <h3 class="services__modal-title">UI/UX Designer</h3>
+                                <p class="services__modal-description">
+                                    Designing intuitive digital experiences with a strong understanding of both
+                                    design principles and frontend implementation.
+                                </p>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">UI/UX design using Figma with wireframes and prototypes.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Branding assets including logo, business card, and letterhead design.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">User-centered design with responsive layouts.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Developer-friendly design handoff for implementation.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p class="services__modal-info">Usability improvements through testing and iteration.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--Testimonials-->
+            <!--<section class="testimonials section">
+                <h2 data-heading="My clients say" class="section__title">Testimonials</h2>
+
+                <div class="testimonials__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
+                            <h3 class="testimonial__date">March 27. 2020</h3>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client1.png" alt="" class="testimonial__profile-img">
+
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">Lee Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
+                            <h3 class="testimonial__date">March 27. 2020</h3>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client2.png" alt="" class="testimonial__profile-img">
+
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">Lee Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum eveniet doloribus!</p>
+                            <h3 class="testimonial__date">March 27. 2020</h3>
+                            <div class="testimonial__profile">
+                                <img src="assets/img/client3.png" alt="" class="testimonial__profile-img">
+
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">Lee Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>-->
+
+            <!--Contact-->
+            <section class="contact section" id="contact">
+                <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <!-- Email -->
+                            <div class="contact__card">
+                                <i class="uil uil-envelope-edit contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">gayathrigcse2022@gmail.com</span>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gayathrigcse2022@gmail.com"
+                                    target="_blank"
+                                    class="contact__button">
+                                        Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                                    </a>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="contact__card">
+                                <i class="uil uil-whatsapp contact__card-icon"></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">+91 6369995787</span>
+                                <a href="https://wa.me/916369995787" target="_blank" rel="noopener"
                                 class="contact__button">
                                     Write me <i class="uil uil-arrow-right contact__button-icon"></i>
                                 </a>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="contact__card">
+                                <i class="uil uil-linkedin contact__card-icon"></i>
+                                <h3 class="contact__card-title">LinkedIn</h3>
+                                <span class="contact__card-data">gayathri-g-146442252</span>
+                                <a href="https://linkedin.com/in/gayathri-g-146442252"
+                                target="_blank" rel="noopener"
+                                class="contact__button">
+                                    Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                                </a>
+                            </div>
                         </div>
 
-                        <!-- WhatsApp -->
-                        <div class="contact__card">
-                            <i class="uil uil-whatsapp contact__card-icon"></i>
-                            <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">+91 6369995787</span>
-                            <a href="https://wa.me/916369995787" target="_blank" rel="noopener"
-                            class="contact__button">
-                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <form id="contact-form" class="contact__form">
+                            <div class="input__container">
+                                <input type="text" name="user_name" class="input" required>
+                                <label>Username</label>
+                            </div>
+
+                            <div class="input__container">
+                                <input type="email" name="user_email" class="input" required>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input__container">
+                                <input type="tel" name="user_phone" class="input">
+                                <label>Phone</label>
+                            </div>
+
+                            <div class="input__container textarea">
+                                <textarea name="message" class="input" required></textarea>
+                                <label>Message</label>
+                            </div>
+
+                            <button type="submit" class="button">
+                                Send Message
+                            </button>
+                            <div id="form-message" class="form__message"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--FOOTER-->
+            <footer class="footer">
+                <div class="footer__bg">
+                    <div class="footer__container container grid">
+                        <div>
+                            <h1 class="footer__title">Gayathri</h1>
+                            <span class="footer__subtitle">Full Stack developer</span>
+                        </div>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#services" class="footer__link">Services</a>
+                            </li>
+                            <li>
+                                <a href="#work" class="footer__link">Work</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__socials">
+                            <a href="https://github.com/GayathriG5787" target="_blank" class="footer__social">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gayathri_g_official?igsh=NThuaWZ6aTczOW1o" target="_blank" class="footer__social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gayathri-g-146442252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__social">
+                                <i class="uil uil-linkedin"></i>
                             </a>
                         </div>
-
-                        <!-- LinkedIn -->
-                        <div class="contact__card">
-                            <i class="uil uil-linkedin contact__card-icon"></i>
-                            <h3 class="contact__card-title">LinkedIn</h3>
-                            <span class="contact__card-data">gayathri-g-146442252</span>
-                            <a href="https://linkedin.com/in/gayathri-g-146442252"
-                            target="_blank" rel="noopener"
-                            class="contact__button">
-                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
-                            </a>
-                        </div>
                     </div>
 
+                    <p class="footer__copy">Copyrights &#169; Gayathri. All right reserved</p>
                 </div>
-                
-                <div class="contact__content">
-                    <form id="contact-form" class="contact__form">
-                        <div class="input__container">
-                            <input type="text" name="user_name" class="input" required>
-                            <label>Username</label>
-                        </div>
+            </footer>
 
-                        <div class="input__container">
-                            <input type="email" name="user_email" class="input" required>
-                            <label>Email</label>
-                        </div>
+        </main>
 
-                        <div class="input__container">
-                            <input type="tel" name="user_phone" class="input">
-                            <label>Phone</label>
-                        </div>
+        
 
-                        <div class="input__container textarea">
-                            <textarea name="message" class="input" required></textarea>
-                            <label>Message</label>
-                        </div>
+        <!--SCROLL UP-->
 
-                        <button type="submit" class="button">
-                            Send Message
-                        </button>
-                        <div id="form-message" class="form__message"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
+        <!--MIXITUP FILTER-->
+        <script src="assets/js/mixitup.min.js"></script>
 
-        <!--FOOTER-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Gayathri</h1>
-                        <span class="footer__subtitle">Full Stack developer</span>
-                    </div>
+        <!--SWIPER JS-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#work" class="footer__link">Work</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
+        <!--MAIN JS-->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="assets/js/main.js"></script>
 
-                    <div class="footer__socials">
-                        <a href="https://github.com/GayathriG5787" target="_blank" class="footer__social">
-                            <i class="uil uil-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/gayathri_g_official?igsh=NThuaWZ6aTczOW1o" target="_blank" class="footer__social">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gayathri-g-146442252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="footer__copy">Copyrights &#169; Gayathri. All right reserved</p>
-            </div>
-        </footer>
-
-    </main>
-
-    
-
-    <!--SCROLL UP-->
-
-    <!--MIXITUP FILTER-->
-    <script src="assets/js/mixitup.min.js"></script>
-
-    <!--SWIPER JS-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--MAIN JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>
