@@ -1895,3 +1895,24 @@ textarea.input {
     }
 }
 
+/* Remove navbar spacing when sidebar open */
+@media screen and (max-width:1024px){
+
+    body.sidebar-open .main{
+        margin-top: 0;
+    }
+
+    body.sidebar-open .sidebar{
+        top: 0;
+        height: 100vh;
+    }
+
+    /* Ensure close icon top-right */
+    body.sidebar-open .nav__close{
+        top: 1rem;
+        right: 1.25rem;
+        position: absolute;
+    }
+}
+
+
