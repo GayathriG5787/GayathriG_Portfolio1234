@@ -361,6 +361,13 @@ input{
     height: 100vh;
 }
 
+/* Tablet only → Navbar + Hero = full screen */
+@media screen and (min-width:577px) and (max-width:1024px){
+    .home{
+        height: calc(100vh - 60px);
+    }
+}
+
 .home__container{
     position: relative;
     height: 100%;
