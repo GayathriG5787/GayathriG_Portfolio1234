@@ -443,6 +443,7 @@ input{
 
 /* Info cards */
 .about__info{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: var(--mb-2);
@@ -1560,6 +1561,10 @@ textarea.input {
     .about__img {
         width: 250px;
     }
+    
+    .about__info{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .qualification__container {
         grid-template-columns: 290px;
@@ -1684,7 +1689,7 @@ textarea.input {
     }
 
     .about__info {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about__description {
@@ -1734,7 +1739,7 @@ textarea.input {
     }
 
     .about__info {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         row-gap: .5rem;
     }
 
