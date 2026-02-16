@@ -1915,4 +1915,13 @@ textarea.input {
     }
 }
 
+/* TABLET ONLY background image */
+@media screen and (min-width:577px) and (max-width:1024px){
+    .home{
+        background-image: url('../img/home-bg-tablet.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 
