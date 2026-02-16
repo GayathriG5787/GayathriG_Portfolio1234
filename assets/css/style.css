@@ -502,8 +502,18 @@ input{
     transition: transform .3s ease;
 }
 
-.button:hover::after{
-    transform: scale(1);
+/* Hover effect only on real hover devices (desktop/laptop) */
+@media (hover: hover) and (pointer: fine) {
+    .button:hover::after {
+        transform: scale(1);
+    }
+}
+
+/* Prevent sticky hover on touch devices */
+@media (hover: none) {
+    .button::after {
+        transform: scale(0) !important;
+    }
 }
 
 .button__icon{
