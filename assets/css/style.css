@@ -139,7 +139,6 @@ input{
 }
 
 /* ===== TOP NAVBAR ===== */
-/* ===== TOP NAVBAR ===== */
 
 /* Default → DESKTOP OFF */
 .header {
@@ -295,6 +294,21 @@ input{
     right: 0;
     margin: auto;
     text-align: center;
+}
+
+/* Share button hover like nav items */
+
+.social__share{
+    transition: .4s;
+}
+
+/* Icon color change */
+.btn__share:hover .social__share{
+    color: var(--skin-color);
+}
+
+.btn__share:hover::after{
+    opacity: 1;
 }
 
 .social__share{
