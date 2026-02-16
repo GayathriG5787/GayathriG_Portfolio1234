@@ -30,6 +30,32 @@ if(navClose) {
     })
 }
 
+// Share Button
+
+const shareBtn = document.getElementById('shareBtn');
+
+if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: "Gayathri Portfolio",
+            text: "Check out my portfolio website!",
+            url: "https://gayathrig5787.github.io/GayathriG_Portfolio1234"
+        };
+
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (err) {
+                console.log("Share cancelled");
+            }
+        } else {
+            // Fallback → copy link
+            navigator.clipboard.writeText("https://gayathrig5787.github.io/GayathriG_Portfolio1234");
+            alert("Portfolio link copied to clipboard!");
+        }
+    });
+}
+
 /*SKILLS ACCORDION (Only one open at a time)*/
 const skillHeaders = document.querySelectorAll('.skills__header');
 const skillContents = document.querySelectorAll('.skills__group');
