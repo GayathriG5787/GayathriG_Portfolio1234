@@ -864,37 +864,69 @@ input{
     color: hsl(342,92%,60%);
 }
 
-/*Work Section*/
-/* Container: Stack cards vertically, but make cards horizontal */
+/* ==================== WORK SECTION ==================== */
 .work__container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    max-width: 1000px; /* Limits width to keep it readable */
+    gap: 2.5rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* The Card: Split into two columns (Image | Content) */
 .work__card {
     background-color: var(--box-color);
     padding: 1.5rem;
     border-radius: .75rem;
     display: grid;
-    grid-template-columns: 1fr 1.2fr; /* Image takes slightly less than half */
-    gap: 2rem;
-    align-items: center;
+    /* Column 1: Image | Column 2: Text/Buttons */
+    grid-template-columns: 1fr 1.2fr;
+    /* Row 1: Content/Image | Row 2: Buttons */
+    grid-template-rows: auto auto; 
+    column-gap: 2rem;
+    row-gap: 1.25rem;
+    /* stretch ensures the image matches the content height exactly */
+    align-items: stretch; 
     transition: all .25s ease;
 }
 
-/* Image: Controlled height to save space */
+.work__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* IMAGE LOGIC: 
+   1. Starts at top (row 1).
+   2. Ends at start of buttons (row 2).
+   3. Crops only bottom/right.
+*/
 .work__img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; 
     width: 100%;
-    height: 220px; /* Fixed height to keep cards uniform */
+    height: 100%; 
     object-fit: cover;
+    /* Anchors to top-left; crops bottom and right */
+    object-position: top left; 
     border-radius: .5rem;
 }
 
-/* Content: Compact text */
+/* Content sits in row 1, column 2 */
+.featured__content {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: start;
+}
+
+/* Buttons sit in row 2, column 2 */
+.featured__buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* ==================== TYPOGRAPHY & TAGS ==================== */
 .work__title {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
@@ -913,12 +945,10 @@ input{
     margin-bottom: 1rem;
 }
 
-/* Tech Stack: Keep them inline and tight */
 .featured__tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1.25rem;
 }
 
 .featured__tech span {
@@ -929,14 +959,33 @@ input{
     border-radius: 4px;
 }
 
-/* Responsive: Stack them on mobile */
+/* ==================== RESPONSIVE ==================== */
 @media screen and (max-width: 768px) {
     .work__card {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto; /* Image, Content, Buttons */
         gap: 1.25rem;
     }
+
+    .work__img, 
+    .featured__content, 
+    .featured__buttons {
+        grid-column: 1 / 2;
+    }
+
     .work__img {
-        height: 180px;
+        grid-row: 1 / 2;
+        height: 200px;
+        /* Keep top-left cropping even on mobile */
+        object-position: top left;
+    }
+
+    .featured__content {
+        grid-row: 2 / 3;
+    }
+
+    .featured__buttons {
+        grid-row: 3 / 4;
     }
 }
 
