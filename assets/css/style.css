@@ -215,12 +215,6 @@ input{
     height: 60px;
 }
 
-/* Simple logo */
-.logo {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
 /*SIDEBAR*/
 .sidebar{
     position: fixed;
