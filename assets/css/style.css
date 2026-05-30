@@ -202,7 +202,6 @@ input{
         left: 0;
         width: 100%;
         height: 60px;
-        background: var(--body-color);
         border-bottom: 1px solid var(--box-color);
         z-index: 1000;
     }
