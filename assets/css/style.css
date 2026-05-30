@@ -209,13 +209,6 @@ input{
 }
 
 .nav__bar {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav__bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
