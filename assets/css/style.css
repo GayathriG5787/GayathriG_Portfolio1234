@@ -319,12 +319,6 @@ input{
     font-size: 1.6rem;
     cursor: pointer;
     color: var(--title-color);
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1100;
 }
 
 .nav__close {
@@ -1670,10 +1664,6 @@ textarea.input {
         display: block;
     }
 
-    .nav__toggle {
-        display: flex;
-    }
-
     .main {
         margin-left: 0;
     }
@@ -1834,10 +1824,6 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
-    .nav__toggle {
-        right: initial;
-        left: 1.5rem;
-    }
 
     .header__social {
     display: none;
